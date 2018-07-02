@@ -1098,6 +1098,46 @@ margin-right: auto;
   margin-bottom: 30px;
 }
 
+/* ===============================================
+Social media icons
+=================================================*/
+.facebook{
+  margin: 4px;
+  font-size: 16px;
+}
+
+.instagram{
+margin: 4px;
+font-size: 16px;
+}
+.followus{
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 570px) {
+ .mob-description{
+  font-size: 20px;
+ }
+ .copyright{
+font-size: 14px;
+word-break: normal;
+text-align: center;
+  }
+
+ .facebook{
+  margin: 4px;
+  font-size: 12px;
+}
+
+.instagram{
+margin: 4px;
+font-size: 12px;
+}
+.followus{
+  font-size: 14px;
+  margin-right: 3px;
+}
+
 #footer .footer-top .footer-info h3 {
   font-size: 34px;
   margin: 0 0 20px 0;
