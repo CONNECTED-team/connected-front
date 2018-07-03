@@ -162,12 +162,21 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
+//for the service cards to EXPAND
+ $("#services .description").hide();
+
+$(document).on("click","#services button[name='read-more-btn']",function(){
+  $(this).text("read less");
+  $(this).attr("name","read-less-btn");
+  var box = $(this).parent().parent().attr("id");
+  $("#" +box+ " .description").show("slow");
+});
+
+$(document).on("click","#services button[name='read-less-btn']", function(){
+  $(this).text("read more");
+  $(this).attr("name", "read-more-btn");
+  var box = $(this).parent().parent().attr("id");
+  $("#" +box+ " .description").hide("slow");
+});
 
 });
