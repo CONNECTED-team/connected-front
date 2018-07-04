@@ -65,14 +65,33 @@ p {
   padding: 0;
   margin: 0 0 30px 0;
   font-size: 25px;
+  letter-spacing: 1.25px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
   font-family: Sketch Block;
-  font-weight: 400;
+  font-weight: lighter;
   margin: 0 0 20px 0;
   padding: 0;
 }
+
+h4 {
+  font-family: Raleway;
+  font-weight: lighter;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+footer {
+  padding: 10px;
+  color: white;
+  background-color: rgba(0,0,0,.9);
+  clear: left;
+  text-align: center;
+  font-family: AR CENA;
+  font-size: 30px;
+}
+
 
 /* Back to top button */
 .back-to-top {
@@ -947,11 +966,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Contact Section
 --------------------------------*/
 #events {
-    background: #fff;
-    background-image: url("../img/call-to-action-bg.jpg");
-
-    padding: 60px 0 40px 0px;
-  }
+  background: #fff;
+  background-image: url("../img/call-to-action-bg.jpg");
+  padding: 60px 0 40px 0px;
+}
 
 div.col-3 {
   position: relative;
@@ -1119,7 +1137,7 @@ font-size: 16px;
   font-size: 20px;
  }
  .copyright{
-font-size: 14px;
+font-size: 12px;
 word-break: normal;
 text-align: center;
   }
@@ -1278,4 +1296,17 @@ font-size: 12px;
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+
+#report {
+  font-family: AR CENA;
+  float: left;
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+#report:hover {
+  text-decoration: underline;
+  color: #00ff00;
 }
