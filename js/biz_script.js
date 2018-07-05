@@ -162,12 +162,23 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
+  // show more and less buttons function
+  $("#services .description").hide();
 
+  $(document).on("click","#services button",function(){
+
+    var box = $(this).parent().parent().attr("id");
+    var name = $(this).attr("name");
+    if (name == "read-more"){
+      //show description
+      $("#" +box+ " .description").show("slow");
+      // change btn text and name attr.
+      $(this).text("Read less")
+      $(this).attr("name","read-less");
+    } else{
+      $("#" +box+ " .description").hide("slow");
+      $(this).text("Read more")
+      $(this).attr("name","read-more");
+    }
+  });
 });
