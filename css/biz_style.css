@@ -65,15 +65,33 @@ p {
   padding: 0;
   margin: 0 0 30px 0;
   font-size: 25px;
+  letter-spacing: 1.25px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Sketch Block;
-  font-weight: 400;
+  font-weight: lighter;
   margin: 0 0 20px 0;
   padding: 0;
 }
 
+h4 {
+  font-family: Raleway;
+  font-weight: lighter;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+/*
+footer {
+  padding: 10px;
+ color: white;
+  background-color: rgba(0,0,0,.9);
+  clear: left;
+  text-align: center;
+  font-family: AR CENA;
+  font-size: 30px;
+}
+*/
 /* Back to top button */
 .back-to-top {
   position: fixed;
@@ -169,6 +187,7 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 40px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Intro Section
@@ -339,7 +358,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   list-style: none;
 }
-
 .nav-menu li {
   position: relative;
   white-space: nowrap;
@@ -781,6 +799,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 }
 
+.btn-success.disabled, .btn-success:disabled, .button-sucess {
+  background-color: #00ff00;
+  border-color: #00ff00;
+}
+
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
@@ -987,6 +1010,16 @@ div.col-3 {
   width: 15%;
   height: 8%;
 }
+#subscribe {
+  position: relative;
+  background-color: #00ff00;
+  border-color: #00ff00;
+  white-space: nowrap;
+    margin: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+  }
+
 .btn{
   position: relative;
   left: 50%;
@@ -1157,6 +1190,12 @@ font-size: 16px;
 .followus{
   font-size: 16px;
 }
+#insta-logo {
+  height: 5vh;
+}
+#fb-logo {
+  height: 5vh;
+}
 /* ==================================*/
 
 .copyright{
@@ -1164,10 +1203,38 @@ font-size: 16px;
 text-align: center;
   }
 
+#report {
+  float: left;
+  margin-left: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+#report:hover {
+  text-decoration: underline;
+  color: #00ff00;
+}
+#footer .container{
+padding-top: 10px;
+}
+
+#footer .col-3{
+max-width: 31vh;
+text-align: right;
+}
+
 @media only screen and (max-width: 570px) {
  .mob-description{
   font-size: 20px;
  }
+
+#insta-logo {
+  height: 3vh;
+}
+/* keep height at 3 for mobile  */
+#fb-logo {
+  height: 3vh;
+}
 
  .facebook{
   margin: 4px;
@@ -1237,6 +1304,10 @@ font-size: 12px;
   left: 0;
   bottom: 0;
   height: 2px;
+}
+#footer .col-3{
+max-width: 25vh;
+text-align: right;
 }
 
 #footer .footer-top h4::before {
@@ -1317,7 +1388,7 @@ font-size: 12px;
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
-  font-size: 14px;
+  font-size: 12px;
   word-break: normal;
   padding-left: 0;
 }
