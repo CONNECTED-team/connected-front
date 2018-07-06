@@ -172,21 +172,19 @@ jQuery(document).ready(function( $ ) {
 */
 //for the service cards to EXPAND
  $("#services .description").hide();
-  
-  $(document).on("click","#services button",function(){
 
-    var box = $(this).parent().parent().attr("id");
-    var name = $(this).attr("name");
-    if (name == "read-more"){
-      //show description
-      $("#" +box+ " .description").show("slow");
-      // change btn text and name attr.
-      $(this).text("Read less")
-      $(this).attr("name","read-less");
-    } else{
-      $("#" +box+ " .description").hide("slow");
-      $(this).text("Read more")
-      $(this).attr("name","read-more");
-    }
-  });
+$(document).on("click","#services button[name='read-more-btn']",function(){
+  $(this).text("read less");
+  $(this).attr("name","read-less-btn");
+  var box = $(this).parent().parent().attr("id");
+  $("#" +box+ " .description").show("slow");
+});
+
+$(document).on("click","#services button[name='read-less-btn']", function(){
+  $(this).text("read more");
+  $(this).attr("name", "read-more-btn");
+  var box = $(this).parent().parent().attr("id");
+  $("#" +box+ " .description").hide("slow");
+});
+
 });
