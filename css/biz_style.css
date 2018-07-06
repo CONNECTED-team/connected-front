@@ -209,7 +209,7 @@ footer {
 
 }
 @media (max-width: 700px) {
-.carousel-head { 
+.carousel-head {
   font-size: 50px;
 }
 }
@@ -380,7 +380,7 @@ footer {
 #nav-menu-container {
   float: right;
   margin: 0;
-  width: 70%;
+  width: 72%;
   /*Adjusts navigation text for resized windows */
 }
 
@@ -742,10 +742,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 0 40px 0;
 }
 
-#services .box {
-  margin-bottom: 30px;
-}
-
 #services .icon {
   float: left;
 }
@@ -779,14 +775,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 2%;
   background-color: white;
   box-shadow: 0px 0px 40px black;
-   margin-top: 30px;
-   margin-bottom: 20px;
-
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 #services .box > .title > a {
   font-size: 30px;
-
 }
 
 #services .description {
@@ -799,10 +793,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 }
 
-.btn-success.disabled, .btn-success:disabled, .button-sucess {
-  background-color: #00ff00;
-  border-color: #00ff00;
-}
 
 /* Call To Action Section
 --------------------------------*/
@@ -886,7 +876,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: url("../img/facts-bg.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 0 0;
- 
+
 }
 
 #facts::before {
@@ -998,10 +988,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 #events .container {
   position: relative;
-}
-div.col-3 {
-  position: relative;
-  margin:auto;
 }
 
 /* Contact Section
