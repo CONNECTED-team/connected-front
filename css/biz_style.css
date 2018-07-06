@@ -55,7 +55,7 @@ a {
 }
 
 a:hover, a:active, a:focus {
-  color: #18d36e;
+  color: #00ff00;
   outline: none;
   text-decoration: none;
 }
@@ -81,11 +81,12 @@ h1, h2, h3, h4, h5, h6 {
   background: #00ff00;
   color: #fff;
   display: inline-block;
-  width: 44px;
-  height: 44px;
+  width: 60px;
+  height: 60px;
   text-align: center;
+  vertical-align: middle;
   line-height: 1;
-  font-size: 16px;
+  font-size: 30px;
   border-radius: 50%;
   right: 15px;
   bottom: 15px;
@@ -178,18 +179,22 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background: #000;
 }
-/*  for smaller screens reduce header size (not working still)
-===================
-@media (max-width : 500px) {
-h2{
-    font-size:22px;
+.carousel-head{
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 70px;
+    font-weight: lighter;
+    font-family: Sketch Block;
+    margin: 0 0 20px 0;
+    padding: 0;
+
+}
+@media (max-width: 700px) {
+.carousel-head { 
+  font-size: 50px;
 }
 }
 
-.carousel-small{
-  font-size: 18px;
-}
-*/
 #intro .carousel-item {
   width: 100%;
   height: 100vh;
@@ -223,6 +228,11 @@ h2{
 
 #intro .carousel-content {
   text-align: center;
+}
+@media (max-width: 750px) {
+.carousel-small{
+ font-size: 20px;
+}
 }
 
 #intro h2 {
@@ -289,8 +299,12 @@ h2{
 
 #intro .carousel-control-next-icon, #intro .carousel-control-prev-icon {
   background: none;
-  font-size: 32px;
+  font-size: 50px;
   line-height: 1;
+}
+
+#intro .carousel-control-next-icon:hover, #intro .carousel-control-prev-icon:hover {
+  color: #00ff00;
 }
 
 #intro .carousel-indicators li {
@@ -298,13 +312,13 @@ h2{
 }
 
 #intro .btn-get-started {
-  font-family: "Montserrat", sans-serif;
+  font-family: Marker Felt;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 35px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 8px 32px;
-  border-radius: 50px;
+  padding: 10px 36px;
+  border-radius: 20px;
   transition: 0.5s;
   margin: 10px;
   color: #fff;
@@ -366,13 +380,13 @@ h2{
 
 /* Nav Menu Styling */
 .nav-menu a {
-  padding: 0 8px 10px 8px;
+  padding: 10px 8px 0 8px;
   text-decoration: none;
   display: inline-block;
   color: #fff;
   font-family: Russo One;
-  font-weight: 700;
-  font-size: 26px;
+  font-weight: 400;
+  font-size: 30px;
   text-transform: uppercase;
   outline: none;
 }
@@ -382,7 +396,7 @@ h2{
 }
 
 .nav-menu > li {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .nav-menu ul {
@@ -528,7 +542,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   padding-bottom: 15px;
 }
-
+/*========== green line under each section title============
 .section-header h3::before {
   content: '';
   position: absolute;
@@ -550,7 +564,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   bottom: 0;
   left: calc(50% - 20px);
 }
-
+*/
 .section-header p {
   text-align: center;
   padding-bottom: 30px;
@@ -610,12 +624,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* About Us Section
 --------------------------------*/
 #about {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background: url("../img/collaboration.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
 }
-
+/* white half-transparent background overlay */
 #about::before {
   content: '';
   position: absolute;
@@ -727,7 +741,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .title {
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  margin-top: 30px;
   font-size: 30px;
 }
 
@@ -746,7 +761,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 2%;
   background-color: white;
   box-shadow: 0px 0px 40px black;
-  height: 300px;
+   margin-top: 30px;
+   margin-bottom: 20px;
 
 }
 
@@ -836,18 +852,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Facts Section
 --------------------------------*/
-#calender{
-  background: url("../img/calender.jpg") center top no-repeat fixed;
-  padding: 60px 0 40px 0px;
+#calendar{
+  background: url("../img/calendar.jpg") center top no-repeat fixed;
   background-size: cover;
-  position: relative;
-}
+  padding: 60px 0 40px 0px;
+} /*=======================*/
+
 
 #facts {
   background: url("../img/facts-bg.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 0 0;
-  position: relative;
+ 
 }
 
 #facts::before {
@@ -953,12 +969,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Contact Section
 --------------------------------*/
 #events {
-    background: #fff;
-    background-image: url("../img/call-to-action-bg.jpg");
-
-    padding: 60px 0 40px 0px;
+  background: #fff;
+  background-size: cover;
+  padding: 60px 0 40px 0;
   }
-
+#events .container {
+  position: relative;
+}
 div.col-3 {
   position: relative;
   margin:auto;
@@ -970,6 +987,12 @@ div.col-3 {
   width: 15%;
   height: 8%;
 }
+.btn{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .submit {
 margin-left: auto;
 margin-right: auto;
@@ -978,6 +1001,21 @@ margin-right: auto;
 .mid {
   margin-left: auto
   minimum-width: 220px;
+}
+#call{
+  width: 6vh;
+  vertical-align: middle;
+  border-style: none;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+#mail{
+  width: 6vh;
+  vertical-align: middle;
+  border-style: none;
+  margin: auto;
+  padding-bottom: 20px;
 }
 
 #contact {
@@ -1102,6 +1140,47 @@ margin-right: auto;
 
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
+}
+
+/* ===============================================
+Social media icons
+=================================================*/
+.facebook{
+  margin: 4px;
+  font-size: 16px;
+}
+
+.instagram{
+margin: 4px;
+font-size: 16px;
+}
+.followus{
+  font-size: 16px;
+}
+/* ==================================*/
+
+.copyright{
+  padding-left: 10vh;
+text-align: center;
+  }
+
+@media only screen and (max-width: 570px) {
+ .mob-description{
+  font-size: 20px;
+ }
+
+ .facebook{
+  margin: 4px;
+  font-size: 12px;
+}
+
+.instagram{
+margin: 4px;
+font-size: 12px;
+}
+.followus{
+  font-size: 14px;
+  margin-right: 3px;
 }
 
 #footer .footer-top .footer-info h3 {
@@ -1238,6 +1317,9 @@ margin-right: auto;
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
+  font-size: 14px;
+  word-break: normal;
+  padding-left: 0;
 }
 
 #footer .credits {
