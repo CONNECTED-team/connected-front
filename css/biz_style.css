@@ -330,7 +330,7 @@ footer {
   cursor: pointer;
 }
 
-#intro .btn-get-started {
+.btn-get-started {
   font-family: Marker Felt;
   font-weight: 500;
   font-size: 35px;
@@ -344,9 +344,10 @@ footer {
   background: #00ff00;
 }
 
-#intro .btn-get-started:hover {
+.btn-get-started:hover {
   background: #fff;
   color: #00ff00;
+  border: 2px solid #00ff00;
 }
 
 /*--------------------------------------------------------------
@@ -556,7 +557,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #111;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 700;
+/*  font-weight: 700;   looks nicer without weight*/
   position: relative;
   padding-bottom: 15px;
 }
@@ -1157,19 +1158,6 @@ margin-right: auto;
   margin-top: -0.1px;
 }
 
-
-#contact .form button[type="submit"] {
-  background: #00ff00;
-  border: 0;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-#contact .form button[type="submit"]:hover {
-  background: #13a456;
-}
 
 /*--------------------------------------------------------------
 # Footer
