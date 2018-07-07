@@ -162,7 +162,6 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
-<<<<<<< HEAD
   // show more and less buttons function
   $("#services .description").hide();
 
@@ -170,35 +169,15 @@ jQuery(document).ready(function( $ ) {
 
     var box = $(this).parent().parent().attr("id");
     var name = $(this).attr("name");
-    if (name == "read-more"){
+    if (name == "read-more-btn"){
       //show description
       $("#" +box+ " .description").show("slow");
       // change btn text and name attr.
       $(this).text("Read less")
-      $(this).attr("name","read-less");
+      $(this).attr("name","read-less-btn");
     } else{
       $("#" +box+ " .description").hide("slow");
       $(this).text("Read more")
-      $(this).attr("name","read-more");
+      $(this).attr("name","read-more-btn");
     }
   });
-=======
-//for the service cards to EXPAND
- $("#services .description").hide();
-
-$(document).on("click","#services button[name='read-more-btn']",function(){
-  $(this).text("read less");
-  $(this).attr("name","read-less-btn");
-  var box = $(this).parent().parent().attr("id");
-  $("#" +box+ " .description").show("slow");
-});
-
-$(document).on("click","#services button[name='read-less-btn']", function(){
-  $(this).text("read more");
-  $(this).attr("name", "read-more-btn");
-  var box = $(this).parent().parent().attr("id");
-  $("#" +box+ " .description").hide("slow");
-});
-
->>>>>>> bef5c23e6ded9ab141cd3d5bbd2b870f9b1ed6c8
-});

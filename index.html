@@ -6,7 +6,6 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
-  <link href="img/LOGOshort.png" rel="icon">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +42,7 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="home.html">Home</a></li>
+          <li class="menu-active"><a href="index.html">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
 		      <li><a href="#events">Events</a></li>
@@ -201,46 +200,47 @@
         </header>
 
         <div class="row">
-          <div id="private-lessons" class="col-lg-3">
+          <div id="private-lessons" class="col-lg-4">
             <div class="box wow bounceInUp">
               <h4 class="title"><a>Private lessons</a></h4>
               <p class="description" style="font-size:20px">Connect with students or tutors that can help you in any subject </p>
               <br>
-              <button name="read-more-btn" class="btn btn-outline-success btn-block">Read more</button>
+              <button name="read-more-btn" class="btn btn-get-started btn-block">Read more</button>
             </div>
           </div>
-          <div id="wagebati" class="col-lg-3">
+          <div id="wagebati" class="col-lg-4">
             <div class="box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
               <h4 class="title"><a>Extra-curricular activities</a></h4>
               <p class="description">COMING</p> <p class="description">SOON</p>
               <br>
-              <button name="read-more-btn" class="btn btn-outline-success btn-block">Read more</button>
+              <button name="read-more-btn" class="btn btn-get-started btn-block">Read more</button>
             </div>
           </div>
-          <div id="student-chatrooms" class="col-lg-3">
+          <div id="student-chatrooms" class="col-lg-4">
             <div class="box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
               <h4 class="title"><a>Student Chatrooms</a></h4>
               <p class="description">COMING SOON</p>
               <br>
-              <button name="read-more-btn" class="btn btn-outline-success btn-block">Read more</button>
+              <button name="read-more-btn" class="btn btn-get-started btn-block">Read more</button>
             </div>
           </div>
-        <div id="edu-yourself" class="col-lg-3">
-          <div class="box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <h4 class="title"><a>Educate Yourself</a></h4>
-            <p class="description">COMING SOON</p>
-            <button name="read-more-btn" class="btn btn-outline-success btn-block">
-            Read more</button>
-          </div>
-        </div>
       </div>
         <div class="row">
+
+          <div id="edu-yourself" class="col-lg-4">
+            <div class="box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <h4 class="title"><a>Educate Yourself</a></h4>
+              <p class="description">COMING SOON</p>
+              <button name="read-more-btn" class="btn btn-get-started btn-block">
+                Read more</button>
+              </div>
+            </div>
           <div id="book-sale" class="col-lg-4">
             <div class="box wow bounceInUp">
               <h4 class="title"><a>Book Sale</a></h4>
               <p class="description" style="font-size:20px">Connect with students or tutors that can help you in any subject </p>
               <br>
-              <button name="read-more-btn" class="btn btn-outline-success btn-block">Read more</button>
+              <button name="read-more-btn" class="btn btn-get-started btn-block">Read more</button>
             </div>
           </div>
           <div id="T-S" class="col-lg-4">
@@ -248,15 +248,7 @@
               <h4 class="title"><a>Teacher to Student</a></h4>
               <p class="description">COMING SOON</p>
               <br>
-              <button name="read-more-btn" class="btn btn-outline-success btn-block">Read more</button>
-            </div>
-          </div>
-          <div id="Wagebati" class="col-lg-4">
-            <div class="box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-              <h4 class="title"><a>LOREM IPSUM</a></h4>
-              <p class="description">COMING SOON</p>
-              <br>
-              <button name="read-more-btn" class="btn btn-outline-success btn-block">Read more</button>
+              <button name="read-more-btn" class="btn btn-get-started btn-block">Read more</button>
             </div>
           </div>
       </div>
@@ -278,7 +270,7 @@
          </p>
         <div class="row">
           <div class="col-4 offset-4">
-             <button type="button" class="btn btn-success btn-lg" name="button">Stay tuned!</button>
+             <button type="button" class="btn btn-get-started btn-lg" name="button">Stay tuned!</button>
           </div>
         </div>
       </div>
@@ -298,7 +290,7 @@
             Choose Connected for a better school experience!
         </p>
         <div class="col-xs-4 offset-xs-4">
-        <button type="button" class="btn btn-success btn-lg" name="button" >Coming soon!</button>
+        <button type="button" class="btn btn-get-started btn-lg" name="button" >Coming soon!</button>
           </div>
       </header>
       </div>
@@ -475,18 +467,19 @@
           <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
 
         <div class="row">
-            <div class="col-xs-4 offset-4">
+            <div class="col-xs-4 offset-3">
             <form action="" method="post">
                   <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="john.doe@example.com">
                   <div class="input-group-append">
-                    <button class="btn btn-outline-success" type="button">Subscribe</button>
+                    <button id="sub-btn" class="btn btn-get-started" type="button">Subscribe</button>
                   </div>
                 </div>
             </form>
           </div>
         </div>
       </div>
+    </div>
 
       <!--  <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
@@ -525,10 +518,10 @@
  <footer id="footer">
     <div class="container">
       <div class="credits">
-       <div class="col3 pull-left">
+       <div class="col-3-pull-left">
        <a id="report" href="#report">Report a Problem</a>
          </div>
-         <div class="col-3 pull-right">
+         <div class="col-3-pull-right">
            <span class="followus">Follow us on</span>
            <a href="#insta"><img id="insta-logo" src="img/insta_logo.png" height="40px"></a>
            <a href="#facebook"><img id="fb-logo" src="img/fb_logo.png" height="40px"></a>
