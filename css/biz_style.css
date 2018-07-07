@@ -330,7 +330,7 @@ footer {
   cursor: pointer;
 }
 
-#intro .btn-get-started {
+.btn-get-started {
   font-family: Marker Felt;
   font-weight: 500;
   font-size: 35px;
@@ -344,7 +344,7 @@ footer {
   background: #00ff00;
 }
 
-#intro .btn-get-started:hover {
+.btn-get-started:hover {
   background: #fff;
   color: #00ff00;
 }
@@ -1383,19 +1383,4 @@ text-align: right;
   text-align: center;
   font-size: 13px;
   color: #ddd;
-}
-
-
-/* button styles */
-.btnoo:hover {
-    color: #fff;
-    background-color: #00ff00;
-    border-color: #00ff00;
-}
-
-.btnoo {
-	color: #00ff00;
-	background-color: transparent;
-	background-image: none;
-	border-color: #00ff00;
 }
