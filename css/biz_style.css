@@ -65,15 +65,33 @@ p {
   padding: 0;
   margin: 0 0 30px 0;
   font-size: 25px;
+  letter-spacing: 1.25px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Sketch Block;
-  font-weight: 400;
+  font-weight: lighter;
   margin: 0 0 20px 0;
   padding: 0;
 }
 
+h4 {
+  font-family: Raleway;
+  font-weight: lighter;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+/*
+footer {
+  padding: 10px;
+ color: white;
+  background-color: rgba(0,0,0,.9);
+  clear: left;
+  text-align: center;
+  font-family: AR CENA;
+  font-size: 30px;
+}
+*/
 /* Back to top button */
 .back-to-top {
   position: fixed;
@@ -81,8 +99,8 @@ h1, h2, h3, h4, h5, h6 {
   background: #00ff00;
   color: #fff;
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   text-align: center;
   vertical-align: middle;
   line-height: 1;
@@ -170,6 +188,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -178,6 +197,21 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   background: #000;
+}
+.carousel-head{
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 70px;
+    font-weight: lighter;
+    font-family: Sketch Block;
+    margin: 0 0 20px 0;
+    padding: 0;
+
+}
+@media (max-width: 700px) {
+.carousel-head {
+  font-size: 50px;
+}
 }
 
 #intro .carousel-item {
@@ -213,6 +247,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .carousel-content {
   text-align: center;
+}
+@media (max-width: 750px) {
+.carousel-small{
+ font-size: 20px;
+}
 }
 
 #intro h2 {
@@ -319,7 +358,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   list-style: none;
 }
-
 .nav-menu li {
   position: relative;
   white-space: nowrap;
@@ -342,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
 #nav-menu-container {
   float: right;
   margin: 0;
-  width: 70%;
+  width: 72%;
   /*Adjusts navigation text for resized windows */
 }
 
@@ -522,7 +560,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   padding-bottom: 15px;
 }
-
+/*========== green line under each section title============
 .section-header h3::before {
   content: '';
   position: absolute;
@@ -544,7 +582,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   bottom: 0;
   left: calc(50% - 20px);
 }
-
+*/
 .section-header p {
   text-align: center;
   padding-bottom: 30px;
@@ -604,12 +642,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* About Us Section
 --------------------------------*/
 #about {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background: url("../img/collaboration.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
 }
-
+/* white half-transparent background overlay */
 #about::before {
   content: '';
   position: absolute;
@@ -739,12 +777,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 0px 0px 40px black;
   margin-top: 30px;
   margin-bottom: 20px;
-
 }
 
 #services .box > .title > a {
   font-size: 30px;
-
 }
 
 #services .description {
@@ -756,6 +792,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 1.3;
 
 }
+
 
 /* Call To Action Section
 --------------------------------*/
@@ -828,18 +865,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Facts Section
 --------------------------------*/
-#calender{
-  background: url("../img/calender.jpg") center top no-repeat fixed;
-  padding: 60px 0 40px 0px;
+#calendar{
+  background: url("../img/calendar.jpg") center top no-repeat fixed;
   background-size: cover;
-  position: relative;
-}
+  padding: 60px 0 40px 0px;
+} /*=======================*/
+
 
 #facts {
   background: url("../img/facts-bg.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 0 0;
-  position: relative;
+
 }
 
 #facts::before {
@@ -945,15 +982,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Contact Section
 --------------------------------*/
 #events {
-    background: #fff;
-    background-image: url("../img/call-to-action-bg.jpg");
-
-    padding: 60px 0 40px 0px;
+  background: #fff;
+  background-size: cover;
+  padding: 60px 0 40px 0;
   }
-
-div.col-3 {
+#events .container {
   position: relative;
-  margin:auto;
 }
 
 /* Contact Section
@@ -962,6 +996,22 @@ div.col-3 {
   width: 15%;
   height: 8%;
 }
+#subscribe {
+  position: relative;
+  background-color: #00ff00;
+  border-color: #00ff00;
+  white-space: nowrap;
+    margin: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+  }
+
+.btn{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .submit {
 margin-left: auto;
 margin-right: auto;
@@ -970,6 +1020,21 @@ margin-right: auto;
 .mid {
   margin-left: auto
   minimum-width: 220px;
+}
+#call{
+  width: 6vh;
+  vertical-align: middle;
+  border-style: none;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+#mail{
+  width: 6vh;
+  vertical-align: middle;
+  border-style: none;
+  margin: auto;
+  padding-bottom: 20px;
 }
 
 #contact {
@@ -1111,16 +1176,51 @@ font-size: 16px;
 .followus{
   font-size: 16px;
 }
+#insta-logo {
+  height: 5vh;
+}
+#fb-logo {
+  height: 5vh;
+}
+/* ==================================*/
+
+.copyright{
+  padding-left: 10vh;
+text-align: center;
+  }
+
+#report {
+  float: left;
+  margin-left: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+#report:hover {
+  text-decoration: underline;
+  color: #00ff00;
+}
+#footer .container{
+padding-top: 10px;
+}
+
+#footer .col-3{
+max-width: 31vh;
+text-align: right;
+}
 
 @media only screen and (max-width: 570px) {
  .mob-description{
   font-size: 20px;
  }
- .copyright{
-font-size: 14px;
-word-break: normal;
-text-align: center;
-  }
+
+#insta-logo {
+  height: 3vh;
+}
+/* keep height at 3 for mobile  */
+#fb-logo {
+  height: 3vh;
+}
 
  .facebook{
   margin: 4px;
@@ -1190,6 +1290,10 @@ font-size: 12px;
   left: 0;
   bottom: 0;
   height: 2px;
+}
+#footer .col-3{
+max-width: 25vh;
+text-align: right;
 }
 
 #footer .footer-top h4::before {
@@ -1270,6 +1374,9 @@ font-size: 12px;
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
+  font-size: 12px;
+  word-break: normal;
+  padding-left: 0;
 }
 
 #footer .credits {
