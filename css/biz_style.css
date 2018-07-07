@@ -113,7 +113,7 @@ footer {
 }
 
 .back-to-top i {
-  padding-top: 12px;
+  padding-top: 7px;
   color: #fff;
 }
 
@@ -330,7 +330,7 @@ footer {
   cursor: pointer;
 }
 
-.btn-get-started {
+#intro .btn-get-started {
   font-family: Marker Felt;
   font-weight: 500;
   font-size: 35px;
@@ -344,7 +344,7 @@ footer {
   background: #00ff00;
 }
 
-.btn-get-started:hover {
+#intro .btn-get-started:hover {
   background: #fff;
   color: #00ff00;
 }
@@ -390,7 +390,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1335px) {
   #nav-menu-container {
     display: none;
   }
@@ -465,7 +465,7 @@ footer {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1335px) {
   #mobile-nav-toggle {
     display: inline;
   }
@@ -1037,6 +1037,8 @@ margin-right: auto;
   padding-bottom: 20px;
 }
 
+/* Contacts */
+
 #contact {
   padding: 60px 0;
 }
@@ -1122,12 +1124,39 @@ margin-right: auto;
   font-size: 13px;
 }
 
-#contact .form input, #contact .form textarea {
+#contact input, #contact .form textarea {
   padding: 10px 14px;
   border-radius: 0;
   box-shadow: none;
-  font-size: 15px;
+  font-size: 28px;
 }
+
+@@media (max-width: 768px) {
+  #contact input[type="text"] {
+    font-size: 10px;
+  }
+}
+
+#contact button.btn-get-started, #contact input[type="text"] {
+  margin-left: 0;
+  height: 64px;
+}
+
+@media (max-width: 768px) {
+  #sub-btn {
+    font-size: 15px;
+  }
+  #contact input[type="text"] {
+    font-size: 15px;
+  }
+
+}
+
+
+#contact button.btn-get-started {
+  margin-top: -0.1px;
+}
+
 
 #contact .form button[type="submit"] {
   background: #00ff00;
@@ -1174,7 +1203,9 @@ margin: 4px;
 font-size: 16px;
 }
 .followus{
-  font-size: 16px;
+  font-size: 22px;
+  font-family: Passing Notes;
+  font-weight: bold;
 }
 #insta-logo {
   height: 5vh;
@@ -1185,15 +1216,21 @@ font-size: 16px;
 /* ==================================*/
 
 .copyright{
-  padding-left: 10vh;
+margin: auto;
 text-align: center;
+font-size: 22px;
+font-family: Passing Notes;
+font-weight: bold;
   }
 
 #report {
   float: left;
-  margin-left: 12px;
+  margin-left: 2px;
   color: white;
   text-decoration: none;
+  font-family: Passing Notes;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 #report:hover {
