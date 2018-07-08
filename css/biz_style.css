@@ -1141,9 +1141,11 @@ margin-right: auto;
 
 .contact input, .contact .form textarea {
   padding: 10px 14px;
-  border-radius: 0;
+  border-top-left: 50%;
+  border-bottom-left: 50%;
   box-shadow: none;
   font-size: 28px;
+  font-family: AR CENA;
 }
 
 @@media (max-width: 768px) {
