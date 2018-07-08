@@ -331,17 +331,17 @@ footer {
 }
 
 .btn-get-started {
-  font-family: Marker Felt;
-  font-weight: 500;
-  font-size: 35px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 36px;
-  border-radius: 20px;
-  transition: 0.5s;
-  margin: 10px;
-  color: #fff;
-  background: #00ff00;
+	font-family: Marker Felt;
+	font-weight: 500;
+	font-size: 25px;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 1rem;
+	border-radius: 20px;
+	transition: 0.5s;
+	margin: 0.5rem;
+	color: #fff;
+	background: #00ff00;
 }
 
 .btn-get-started:hover {
@@ -553,7 +553,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Sections Header
 --------------------------------*/
 .section-header h3 {
-  font-size: 50px;
+  font-size: 45px;
   color: #111;
   text-transform: uppercase;
   text-align: center;
@@ -561,6 +561,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   padding-bottom: 15px;
 }
+
+@media (max-width: 768px ){
+  .section-header h3 {
+    font-size: 40px;
+  }
+}
+
+
 /*========== green line under each section title============
 .section-header h3::before {
   content: '';
@@ -983,7 +991,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Contact Section
 --------------------------------*/
 #events {
-  background: #fff;
+  background: #f7f7f7;
   background-size: cover;
   padding: 60px 0 40px 0;
   }
@@ -1039,29 +1047,35 @@ margin-right: auto;
 }
 
 /* Contacts */
+#partners {
+  background-color: #fff;
+}
 
-#contact {
+#contacts {
+  margin-top: -1rem;
+}
+.contact {
   padding: 60px 0;
 }
 
-#contact .contact-info {
+.contact .contact-info {
   margin-bottom: 20px;
   text-align: center;
 }
 
-#contact .contact-info i {
+.contact .contact-info i {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
   color: #00ff00;
 }
 
-#contact .contact-info address, #contact .contact-info p {
+.contact .contact-info address, .contact .contact-info p {
   margin-bottom: 0;
   color: #000;
 }
 
-#contact .contact-info h3 {
+.contact .contact-info h3 {
   font-size: 18px;
   margin-bottom: 15px;
   font-weight: bold;
@@ -1069,31 +1083,31 @@ margin-right: auto;
   color: #999;
 }
 
-#contact .contact-info a {
+.contact .contact-info a {
   color: #000;
 }
 
-#contact .contact-info a:hover {
+.contact .contact-info a:hover {
   color: #00ff00;
 }
 
-#contact .contact-address, #contact .contact-phone, #contact .contact-email {
+.contact .contact-address, .contact .contact-phone, .contact .contact-email {
   margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
-  #contact .contact-address, #contact .contact-phone, #contact .contact-email {
+  .contact .contact-address, .contact .contact-phone, .contact .contact-email {
     padding: 20px 0;
   }
 }
 
 @media (min-width: 768px) {
-  #contact .contact-phone {
+  .contact .contact-phone {
     border-right: 1px solid #ddd;
   }
 }
 
-#contact .form #sendmessage {
+.contact .form #sendmessage {
   color: #00ff00;
   border: 1px solid #00ff00;
   display: none;
@@ -1103,7 +1117,7 @@ margin-right: auto;
   margin-bottom: 15px;
 }
 
-#contact .form #errormessage {
+.contact .form #errormessage {
   color: red;
   display: none;
   border: 1px solid red;
@@ -1113,11 +1127,11 @@ margin-right: auto;
   margin-bottom: 15px;
 }
 
-#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+.contact .form #sendmessage.show, .contact .form #errormessage.show, .contact .form .show {
   display: block;
 }
 
-#contact .form .validation {
+.contact .form .validation {
   color: red;
   display: none;
   margin: 0 0 20px;
@@ -1125,7 +1139,7 @@ margin-right: auto;
   font-size: 13px;
 }
 
-#contact input, #contact .form textarea {
+.contact input, .contact .form textarea {
   padding: 10px 14px;
   border-radius: 0;
   box-shadow: none;
@@ -1133,12 +1147,12 @@ margin-right: auto;
 }
 
 @@media (max-width: 768px) {
-  #contact input[type="text"] {
+  .contact input[type="text"] {
     font-size: 10px;
   }
 }
 
-#contact button.btn-get-started, #contact input[type="text"] {
+.contact button.btn-get-started, .contact input[type="text"] {
   margin-left: 0;
   height: 64px;
 }
@@ -1147,14 +1161,14 @@ margin-right: auto;
   #sub-btn {
     font-size: 15px;
   }
-  #contact input[type="text"] {
+  .contact input[type="text"] {
     font-size: 15px;
   }
 
 }
 
 
-#contact button.btn-get-started {
+.contact button.btn-get-started {
   margin-top: -0.1px;
 }
 
