@@ -1240,9 +1240,15 @@ max-width: 31vh;
 text-align: right;
 }
 
-@media only screen and (max-width: 570px) {
- .mob-description{
-  font-size: 20px;
+ @media (max-width:768px){
+   .mob-description {
+     line-height: 1.5;
+     font-size: 15px;
+   }
+   .carousel-small {
+     line-height: 1.5;
+     font-size: 15px;
+   }
  }
 
 #insta-logo {
