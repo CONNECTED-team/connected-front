@@ -333,10 +333,10 @@ footer {
 .btn-get-started {
 	font-family: Marker Felt;
 	font-weight: 500;
-	font-size: 25px;
+	font-size: 30px;
 	letter-spacing: 1px;
+  padding: 0.5rem;
 	display: inline-block;
-	padding: 1rem;
 	border-radius: 20px;
 	transition: 0.5s;
 	color: #fff;
@@ -404,7 +404,7 @@ footer {
   color: #fff;
   font-family: Russo One;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 29px;
   text-transform: uppercase;
   outline: none;
 }
@@ -497,7 +497,7 @@ footer {
 
 #mobile-nav ul li a {
   color: #fff;
-  font-size: 13px;
+  font-size: 15px;
   text-transform: uppercase;
   overflow: hidden;
   padding: 10px 22px 10px 15px;
@@ -507,11 +507,11 @@ footer {
   display: block;
   outline: none;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Russo One", sans-serif;
 }
 
 #mobile-nav ul li a:hover {
-  color: #fff;
+  color: #00ff00;
 }
 
 #mobile-nav ul li li {
@@ -1015,12 +1015,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     box-sizing: border-box;
   }
 
-.btn{
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .submit {
 margin-left: auto;
 margin-right: auto;
@@ -1053,6 +1047,10 @@ margin-right: auto;
 
 #contacts {
   margin-top: -1rem;
+}
+
+#contact {
+  margin-top: -16px;
 }
 .contact {
   padding: 60px 0;
@@ -1148,15 +1146,14 @@ margin-right: auto;
   font-family: AR CENA;
 }
 
-@@media (max-width: 768px) {
-  .contact input[type="text"] {
-    font-size: 10px;
-  }
-}
-
 .contact button.btn-get-started, .contact input[type="text"] {
   margin-left: 0;
   height: 64px;
+}
+
+#contact input[type="text"]{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 @media (max-width: 768px) {
@@ -1168,13 +1165,6 @@ margin-right: auto;
   }
 
 }
-
-
-.contact button.btn-get-started {
-  margin-top: -0.1px;
-}
-
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
