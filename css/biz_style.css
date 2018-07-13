@@ -1,12 +1,3 @@
-/*
-  Theme Name: BizPage
-  Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 
 /*========================================================================
   look it's a really small mistake. you are already in the "css" directory
@@ -1196,11 +1187,14 @@ Social media icons
 margin: 4px;
 font-size: 16px;
 }
+
 .followus{
   font-size: 22px;
   font-family: Passing Notes;
   font-weight: bold;
+  margin-right: 3px;
 }
+
 #insta-logo {
   height: 5vh;
 }
@@ -1249,6 +1243,11 @@ text-align: right;
      line-height: 1.5;
      font-size: 15px;
    }
+
+   .followus{
+  font-size: 16px;
+  }
+
  }
 
 #insta-logo {
@@ -1268,10 +1267,8 @@ text-align: right;
 margin: 4px;
 font-size: 12px;
 }
-.followus{
-  font-size: 14px;
-  margin-right: 3px;
-}
+
+
 
 #footer .footer-top .footer-info h3 {
   font-size: 34px;
