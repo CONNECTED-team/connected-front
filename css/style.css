@@ -625,12 +625,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* About Us Section */
 #about {
-  background: url("../img/collaboration.jpg") center top no-repeat fixed;
-  background-size: cover;
+  background: no-repeat;
+  background:linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('../img/collab-fist.jpg');
   padding: 60px 0 40px 0;
-  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
 }
-/* white half-transparent background overlay */
+/* white half-transparent background overlay 
 #about::before {
   content: '';
   position: absolute;
@@ -641,6 +643,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: rgba(255, 255, 255, 0.92);
   z-index: 9;
 }
+*/
 
 #about .container {
   position: relative;

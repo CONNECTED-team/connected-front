@@ -190,3 +190,15 @@ jQuery(document).ready(function( $ ) {
     }
   });
 });
+
+// remove green glow on prev chosen nav item after scroll
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+        if (scroll >= 500) {
+        $(".sfHover").removeClass("sfHover");
+        $(".menu-active").removeClass("menu-active");
+        
+    }
+});
+ 
